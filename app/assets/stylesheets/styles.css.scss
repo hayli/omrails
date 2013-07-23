@@ -1,0 +1,51 @@
+/* You can change the font here */
+/* $baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+
+$navbarHeight: 50px;
+$navbarBackground: white;
+$navbarBackgroundHighlight: white;
+$navbarBrandColor: #333333;
+$navbarLinkColor : red;
+
+$bodyBackground: #333333;
+
+$btnPrimaryBackground: #2986b5;
+$btnPrimaryBackgroundHighlight: #26607c;
+
+
+
+@import 'bootstrap';
+
+
+body {
+	padding-top: 90px;	
+}
+
+
+@import 'bootstrap-responsive';
+
+
+.hero-unit {
+	background-color: $grayDarker;
+	color: $white;	
+	.home_l {
+		color:  #2986b5;
+	}
+
+}
+
+.navbar_inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a{
+		color: $white;
+	}
+}
+
