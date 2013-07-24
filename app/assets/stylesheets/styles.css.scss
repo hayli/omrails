@@ -8,23 +8,31 @@ $navbarBackgroundHighlight: white;
 $navbarBrandColor: #333333;
 $navbarLinkColor : red;
 
-$bodyBackground: #333333;
+/*$bodyBackground: #333333;*/
 
 $btnPrimaryBackground: #2986b5;
 $btnPrimaryBackgroundHighlight: #26607c;
 
+@font-face {
+    font-family: 'gooddogregular';
+    src: url(font-path('GoodDog/GoodDog-webfont.eot'));
+    src: url(font-path('GoodDog/GoodDog-webfont.eot?#iefix')) format('embedded-opentype'),
+         url(font-path('GoodDog/GoodDog-webfont.woff')) format('woff'),
+         url(font-path('GoodDog/GoodDog-webfont.ttf')) format('truetype'),
+         url(font-path('GoodDog/GoodDog-webfont.svg#gooddogregular')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+/*$baseFontFamily: gooddogregular;*/
 
 @import 'bootstrap';
-
 
 body {
 	padding-top: 90px;	
 }
 
-
 @import 'bootstrap-responsive';
-
 
 .hero-unit {
 	background-color: $grayDarker;
@@ -33,6 +41,11 @@ body {
 		color:  #2986b5;
 	}
 
+}
+
+.navbar .brand{
+	font-family: 'gooddogregular';
+	font-size: 40px;
 }
 
 .navbar_inner {
