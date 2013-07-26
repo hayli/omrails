@@ -8,10 +8,13 @@ $navbarBackgroundHighlight: white;
 $navbarBrandColor: #333333;
 $navbarLinkColor : red;
 
-$bodyBackground: #333333;
+$tableBackgroundAccent : #424242;
 
 $btnPrimaryBackground: #2986b5;
 $btnPrimaryBackgroundHighlight: #26607c;
+
+$textColor : white;
+$bodyBackground: #333333;
 
 @font-face {
     font-family: 'gooddogregular';
@@ -29,14 +32,10 @@ $btnPrimaryBackgroundHighlight: #26607c;
 @import 'bootstrap';
 
 body {
-	padding-top: 90px;	
+	padding-top: 100px;	
 }
 
 @import 'bootstrap-responsive';
-
-.white_body {
-	color: $white;
-}
 
 .form-btn {
 	margin-left: 180px;
@@ -50,12 +49,16 @@ body {
     /* Required for Webkit, but not for Gecko */
   }
   label {
-  	color: $white;
     float: left;
     width: 100px;
     text-align: right;
     margin: 2px 10px;
   }
+}
+
+.well{
+  background-color: $grayLight;
+  border-color: $gray;
 }
 
 .hero-unit {
